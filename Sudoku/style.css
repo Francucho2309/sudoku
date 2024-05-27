@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  background-color: #3e6259;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100vh;
+  background-image: url(fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 60px;
+  color: black;
+}
+
+#modoJuego {
+  text-align: left;
+  font-size: 30px;
+  position: absolute;
+  top: 30%;
+  left: 72%;
+}
+
+#reloj {
+  margin-top: 25px;
+}
+
+#modoJuego2 {
+  top: 30%;
+  position: absolute;
+  left: 10%;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+
+#vidas {
+  margin-top: 25px;
+}
+
+.label {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+.celda {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 25px;
+  border: 1px solid black;
+  transition: all 0.3s ease-in-out;
+}
+
+table {
+  border-collapse: collapse;
+  border: 5px solid black;
+  margin-top: 40px;
+}
+
+table tr:nth-child(3n) td,
+table tr:nth-child(3n + 3) td {
+  border-bottom: 3px solid black;
+}
+
+table td:nth-child(3n) {
+  border-right: 3px solid black;
+}
+
+input {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+#btnEmpezar,
+#btnResolver,
+#btnReiniciar {
+  background-color: #102542;
+}
+
+#btnEmpezar:hover,
+#btnResolver:hover,
+#btnReiniciar:hover {
+  background-color: white;
+  color: black;
+}
